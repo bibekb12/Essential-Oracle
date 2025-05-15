@@ -1,0 +1,5 @@
+
+SELECT * FROM dba_temp_free_space;
+
+ALTER TABLESPACE temp
+   ADD TEMPFILE 'E:\datafile\temp02.dbf' SIZE 2048M AUTOEXTEND ON;

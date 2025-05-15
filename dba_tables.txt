@@ -1,0 +1,15 @@
+select * from dba_data_files;
+
+select * from dba_tablespaces;
+
+create tablespace manipal_hospital datafile 'C:\ORACLE\PRODUCT\10.2.0\ORADATA\HOSPITAL\manipal_hospital01.dbf' SIZE 10M AUTOEXTEND ON;
+
+alter tablespace users add datafile 'C:\ORACLE\PRODUCT\10.2.0\ORADATA\HOSPITAL\manipal_hospital01.dbf' SIZE 10M AUTOEXTEND ON;
+
+
+SELECT 
+   tablespace_name, 
+   file_name, 
+   bytes / 1024/ 1024  MB
+FROM
+   dba_data_files;

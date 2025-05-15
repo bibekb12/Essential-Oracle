@@ -1,0 +1,7 @@
+//create tablespace rog datafile'E:\datafile\rog.dbf' size 10m autoextend on;
+
+
+
+select username,default_tablespace from dba_users where username = 'AAROGYA_USER';
+
+alter user AAROGYA_USER default tablespace ROG;

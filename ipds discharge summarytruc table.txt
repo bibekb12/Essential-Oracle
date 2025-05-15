@@ -1,0 +1,33 @@
+ select * from HS_IPDS_IPDISCHARGESUMMARY;
+ 
+ select * from HS_DSCN_DSCONTENT;
+ 
+ --select * from HS_MEFR_MEDICATIONFREQUENCY;
+ 
+ --select * from HS_ONEM_ONEMERGENCY;
+ 
+ --select * from HS_IPEM_IPEMERGENCY;
+ 
+ 
+-- select * from HS_DIAD_DISCHARGEADVICE;
+
+
+ --select * from HS_CHPL_CHEMOTHERAPYPLAN;
+ 
+ --select * from HS_CHTP_CHEMOTHERAPYPLAN;
+
+ --select * from HS_NEVI_NEXTVISIT;
+
+ --select * from HS_POEV_POSTOPEVENTS;
+ 
+-- select * from HS_DSCO_DSCONSULTANTS;
+
+-- select * from HS_DSOP_DSOPERATION;
+
+ select * from HS_IPIN_IPINVESTIGTIONS;
+
+ --select * from HS_DSAC_DSACCESSORIES;
+
+ --select * from HS_DSFU_DSFOLLOWUP;
+
+ select * from HS_OPDE_OPERATIONDESCRIPTION;

@@ -1,0 +1,79 @@
+grant select on kmchdc_user.hs_bide_billdetail to kmcnew_USER;
+
+grant select on kmchdc_user.hs_rede_Refunddetail to kmcnew_USER;
+
+grant select on kmcpath_user.hs_bide_billdetail to kmcnew_USER;
+
+grant select on kmcpath_user.hs_rede_Refunddetail to kmcnew_USER;
+
+grant select on kmc_pharnew.SaleMaster to kmcnew_user;
+
+grant select on kmc_pharnew.SaleDetail to kmcnew_user;
+
+grant select on kmc_pharnew.ItemsList to kmcnew_user;
+
+grant select on kmc_pharnew.ReturnMaster to kmcnew_user;
+
+grant select on kmc_pharnew.ReturnDetail to kmcnew_user;
+
+GRANT SELECT ON kmc_pharnew.MAT_TRANS_DETAIL TO KMCNEW_USER;
+
+grant select on kmc_pharnew.genericname TO KMCNEW_USER;
+
+grant select on kmc_acc.acctree to kmcnew_user;
+
+
+grant select on kmcpharins.servicereturndetail to kmcnew_user;
+
+grant select on kmcpharins.servicereturnmaster to kmcnew_user;
+
+grant select on kmcpharins.servicesalemaster to kmcnew_user;
+
+grant select on kmcpharins.servicesaledetail to kmcnew_user;
+
+grant select on kmcpharins.salemaster to kmcnew_user;
+
+grant select on kmcpharins.saledetail to kmcnew_user;
+
+grant select on kmcpharins.returnmaster to kmcnew_user;
+
+grant select on kmcpharins.returndetail to kmcnew_user;
+
+grant select on kmcpharins.servicesalemaster to kmcnew_user;
+
+grant select on kmcpharins.servicesaledetail to kmcnew_user;
+
+grant select on kmcpharins.servicereturnmaster to kmcnew_user;
+
+grant select on kmcpharins.servicereturndetail to kmcnew_user;
+
+
+grant select on kmcpharins.servicereturndetail to kmcnew_user;
+
+grant select on kmcpharins.servicereturnmaster to kmcnew_user;
+
+grant select on kmcpharins.servicesalemaster to kmcnew_user;
+
+grant select on kmcpharins.servicesaledetail to kmcnew_user;
+
+grant select on kmcpharins.salemaster to kmcnew_user;
+
+grant select on kmcpharins.saledetail to kmcnew_user;
+
+grant select on kmcpharins.returnmaster to kmcnew_user;
+
+grant select on kmcpharins.returndetail to kmcnew_user;
+grant select on kmcpharins.salemaster to kmcnew_user;
+grant select on kmcpharins.returnmaster to kmcnew_user;
+grant select on kmcpharins.servicesalemaster to kmcnew_user;
+grant select on kmcpharins.servicereturnmaster to kmcnew_user;
+grant select on kmcpharins.saledetail to kmcnew_user;
+grant select on kmcpharins.returndetail to kmcnew_user;
+grant select on kmcpharins.servicesaledetail to kmcnew_user;
+grant select on kmcpharins.servicereturndetail to kmcnew_user;
+grant select on kmcpharins.itemslist to kmcnew_user;
+
+commit;
+
+
+

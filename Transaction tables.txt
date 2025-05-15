@@ -1,0 +1,250 @@
+
+
+Truncate Table HS_PAMA_Patientmain;
+
+Truncate Table HS_PAVI_PatientVisit;
+
+Truncate Table HS_SEBM_ServiceBillMaster;
+
+Truncate Table HS_SEBD_ServiceBillDetail;
+
+Truncate Table HS_BIMA_BillMaster;
+
+Truncate Table HS_BIDE_BillDetail;
+
+Truncate Table HS_REDE_RefundDetail;
+
+
+Delete From HS_REBM_RefundBillMaster CASCADE ; 
+
+Truncate Table HS_Frde_FractionDetail;
+
+Truncate Table HS_Frrd_FractionRefundDetail;
+
+truncate table HS_CRPM_CREDITPAYMENTMASTER;
+
+truncate table HS_CRPD_CREDITPAYMENTDETAIL;
+
+Truncate Table Patienttest;
+
+Truncate Table PatientTestDetail;
+
+Truncate Table SampleCollection;
+
+Truncate Table HS_INRE_INPATIENTREG;
+
+Truncate Table HS_INDE_InpatientDetail;
+
+Truncate Table HS_DEPO_DEPOSIT;
+
+Truncate Table HS_TECA_TESTCANCEL;
+
+Truncate Table PATIENTTEST;
+
+Truncate Table HS_MEMB_Member;
+
+Truncate Table HS_ACPO_ACTUALPOSTOPICD;
+
+Truncate Table HS_ACPR_ACTUALPREOPICD;
+
+Truncate Table HS_AODS_ACTUALOTINVDOCTORSTAFF;
+
+Truncate Table HS_APPR_APPROACH;
+
+Truncate Table HS_BEMO_BEDMOVEMENT;
+
+Truncate Table HS_BSFD_BNBSPCLFRACTIONDETAIL;
+
+Truncate Table HS_DIAG_DIAGNOSIS;
+
+Truncate Table HS_DIAD_DISCHARGEADVICE;
+
+Truncate Table HS_ERPA_ERPATIENTMAIN;
+
+Truncate Table HS_FIST_FILESTATUS;
+
+Truncate Table HS_IPEM_IPEMERGENCY;
+
+Truncate Table HS_IPIN_IPINVESTIGTIONS;
+
+Truncate Table HS_LOG_BEDRESET;
+
+Truncate Table HS_LOG_BILLDETAIL;
+
+Truncate Table HS_LOG_GLOBAL;
+
+Truncate Table HS_LOG_PATIENTINFOMODIFICATION;
+
+Truncate Table HS_MEDI_MEDICINE;
+
+Truncate Table HS_OIDS_OTINVOLVEDDOCTORSTAFF;
+
+Truncate Table HS_OPAC_OPERATIONACTUAL;
+
+Truncate table HS_OTPT_OTPERFORMEDTYPE;
+
+Truncate Table TRANSACTIONLOG;
+
+Delete From HS_IPDS_IPDISCHARGESUMMARY  Cascade;
+
+--Truncate Table HS_IPDS_IPDISCHARGESUMMARY  ;
+
+Truncate Table ADVANCEMASTER;
+
+Truncate Table ADVANCECLEARMASTER;
+
+Truncate Table ADVANCECLEARDETAIL;
+
+Truncate Table HS_DSOP_DSOPERATION;
+
+Truncate Table HS_BDPT_BILLDETAILPATIENTTEST;
+
+Truncate Table HS_PLPO_PLANPOSTOPICD;
+
+Truncate Table HS_PLPR_PLANPREOPICD;
+
+Truncate Table HS_DIDO_DISCHARGESUMMARYDOCTOR;
+
+Truncate Table HS_POTP_PLANOTPERFORMED;
+
+Truncate Table HS_TEPD_TESTPACKAGEDETAIL;
+
+Truncate Table LB_FNIN_FNACINVESTIGATION;
+
+--NEW ADDED
+
+truncate table CREDITPAYMENTMASTER;
+
+truncate table CREDITPAYMENTDETAIL1;
+
+truncate table DAY_CLOSE;
+
+truncate table DOCTORROUNDVISIT;
+
+truncate table HS_DOWF_DOCTORWISEFRACTION;
+
+truncate table  HS_DWRC_DOCWISEROUNDCHARGE;
+ 
+truncate table HS_FARR_FINALAMTRECEIVEREFUND;
+ 
+truncate table HS_IPIN_IPINVESTIGTIONS;
+ 
+truncate table HS_IVPA_IVFPATIENT;
+
+-- NEW ADDED BY NEEKET
+
+truncate table HS_VISI_VITALSIGN;
+
+truncate table LB_UWRP_USERWISEREPORTPRINTLOG;
+
+truncate table MAT_TRANS_MASTER;
+
+truncate table MAT_TRANS_DETAIL;
+
+truncate table MEDICINE_REQ_MASTER;
+
+truncate table PATIENTFINDINGMASTER;
+
+truncate table PATIENTTESTSPECIAL_LAB;
+
+truncate table PATIENTTESTSPECIAL_RADIO;
+
+truncate table SENSITIVITYRESULT;
+
+truncate table TRANSACTIONLOG;
+
+truncate table HS_NURS_NURSE;
+
+truncate table HS_SUTR_SURGICALTREATMENT;
+
+truncate table HS_TEPD_TESTPACKAGEDETAIL1;
+
+truncate table HOS_NEPR_NEUROPROFILE;
+
+truncate table HR_CARD_CANCERREPORTDETAILS;
+
+truncate table HR_FNRD_FNACREPORTDETAILS;
+
+truncate table HR_FOSC_FOOTERSETUPCHECK;
+
+truncate table HR_PAHR_PATIENTHISTOREPORT;
+
+truncate table HR_PARD_PAPREPORTDETAILS;
+
+truncate table HR_PTSW_PATIENTTESTSPECIALWEB;
+
+truncate table HR_SURD_SURGICALREPORTDETAILS;
+
+truncate table HR_TEDO_TESTDOCASSIGNMENT;
+
+truncate table CL_PTNT_CONSULTANT;
+
+truncate table CL_SERV_SERVICEREGISTRATION;
+
+truncate table HS_CHTP_CHEMOTHERAPYPLAN;
+
+truncate table HS_DSAC_DSACCESSORIES;
+
+truncate table HS_DSBD_DOCSHAREBREAKDOWN;
+
+truncate table HS_HIST_HISTORY;
+
+truncate table HS_ICLO_ICDLOCAL;
+
+truncate table HS_INSI_INVESTIGATIONSIGN;
+
+truncate table HS_LOG_DRCORRECTION;
+
+truncate table HS_LOG_FRACTIONLOCKUNLOCK;
+
+truncate table HS_LOG_TESTNAMEPRICE;
+
+truncate table HS_LOG_UNDODISCHARGE;
+
+truncate table HS_NEDS_NEURODISCHARGESUMMARY;
+
+truncate table HS_NUOR_NURSINGORDER;
+
+truncate table HS_OPPL_OPERATIONPLAN;
+
+truncate table HS_OUCO_OUTCOME;
+
+truncate table HS_PAIN_PARTYINFO;
+
+truncate table HS_PARD_PARTYRECEIPTDETAIL;
+
+truncate table HS_PARR_PARTYRECEIPTREFUND;
+
+truncate table HS_PRDI_PROVISIONALDIAGONOSIS;
+
+truncate table HS_REHO_REFERRINGHOSPITAL;       
+
+truncate table HS_LOG_DOCWISEROUNDVISITCHARGE;       
+
+truncate table HS_LOG_GROUPPREVILAGE_INSERT;
+truncate table HS_LOG_MENUPREVILAGE_DELETE;
+truncate table HS_LOG_MENUPREVILAGE_INSERT;
+truncate table HS_MEDI_MEDDIAGONOSIS;
+truncate table HS_MEIN_MEDINVESTIGATION;
+truncate table HS_MEOP_MEDOPERATION;
+truncate table HS_MERE_MEDICALRECORD;
+truncate table HS_METR_MEDICALTREATMENT;
+truncate table HS_MRBI_MRBIRTH;
+truncate table LAMR_MACHINERESULT;
+truncate table OUTCOME;
+truncate table PATIENT_REPORT_FOOTER;
+truncate table RATE_CHANGE_HIS;
+truncate table RECEIVEDDETAIL;
+truncate table RECEIVEDMASTER;
+truncate table REPORT_FOOTER;
+truncate table RETURNDETAIL;
+truncate table RETURNMASTER;
+truncate table SALEDETAIL;
+truncate table SALEMASTER;
+truncate table SALEPRESCRIPTIONS;
+truncate table TEMPSALEDETAIL;
+truncate table TEMPSALEMASTER;
+truncate table TEMPTESTNAME;
+
+  
+COMMIT;

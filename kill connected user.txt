@@ -1,0 +1,15 @@
+declare
+DBUSERNAME varchar2(30);
+CURRSESS varchar2(10);
+CURRSID varchar2(10);
+begin
+-- Enter Username here
+DBUSERNAME := 'KMCNEW_USER';
+SELECT SID, SERIAL# into CURRSID, CURRSESS FROM V$SESSION WHERE AUDSID = Sys_Context('USERENV', 'SESSIONID');
+for rec in (select * from V$SESSION where USERNAME = DBUSERNAME)
+loop
+if rec.SID <> CURRSID then
+execute immediate 'Alter System Kill Session '''|| rec.Sid || ',' || rec.Serial# || ''' IMMEDIATE';
+end if;
+end loop;
+end;

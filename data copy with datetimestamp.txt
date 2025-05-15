@@ -1,0 +1,59 @@
+
+@echo off
+setlocal enabledelayedexpansion
+
+rem Get the current date in YYYYMMDD format
+for /f "tokens=2-4 delims=/ " %%a in ("%date%") do (
+  set "year=%%c"
+  set "month=%%a"
+  set "day=%%b"
+)
+
+rem Add leading zeros if needed
+if %month% lss 10 set "month=0%month%"
+if %day% lss 10 set "day=0%day%"
+
+rem Construct the destination folder name with the current date
+set "destination=G:\My Drive\MIDAS_DATABASE_BACKUPEVERYDAY\!year!!month!!day!"
+
+rem Use xcopy to copy the files
+xcopy "G:\My Drive\midas_database_backup" "%destination%" /E /I
+
+endlocal
+
+==========================================================================================================================
+xcopy \\192.168.6.247\dpdump  D:\midas_db_backup\*%date:~-4,4%%date:~-10,2%%date:~7,2%*
+
+
+@echo off
+setlocal enabledelayedexpansion
+
+set "source=%source%"
+set "destination=%destination%"
+
+for %%A in ("%source%\*") do (
+    set "filename=%%~nxA"
+    set "trimmed_filename=!filename:~0,-8!"
+    xcopy "%%A" "%destination%\!trimmed_filename!%date:~-4,4%%date:~-10,2%%date:~7,2%!%%~xA"
+)
+
+endlocal
+========================================================================================================================
+--another ask for file name
+
+@echo off
+setlocal enabledelayedexpansion
+
+set "source=\\192.168.6.247\dpdump"
+set "destination=D:\midas_db_backup"
+
+for %%A in ("%source%\*") do (
+    set "filename=%%~nxA"
+    set /p "user_input=Enter a name for '!filename!': "
+    xcopy "%%A" "%destination%\!user_input!%date:~-4,4%%date:~-10,2%%date:~7,2%!%%~xA"
+)
+
+endlocal
+
+
+
