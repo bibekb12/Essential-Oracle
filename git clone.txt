@@ -1,1 +1,0 @@
-git clone http://182.93.89.27/hmis/development.git <name>
