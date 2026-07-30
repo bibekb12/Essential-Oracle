@@ -1,3 +1,0 @@
-expdp hmis1/hmis1 schemas=hmis1 directory=DATA_PUMP_DIR dumpfile=hmis1_dec28.dmp logfile=hmis1_dec28.log
-
-impdp hmismain/hmis1 schemas=hmis1 directory=DATA_PUMP_DIR dumpfile=hmis1_dec28.dmp REMAP_SCHEMA=hmis1:hmismain logfile=hmis1_dec28.log
