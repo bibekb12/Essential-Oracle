@@ -1,9 +1,9 @@
 select 'alter table "'||table_name||'" enable constraint '||constraint_name||';' from all_constraints
-where owner = 'BCH_USER'
+where owner = 'DB_USER'
 and constraint_type = 'R'
 
 select 'alter table '||table_name||' disable constraint '||constraint_name||';' from all_constraints 
-WHERE owner='NOBELBRTNEW_USER' and constraint_type = 'R';
+WHERE owner='DB_USER' and constraint_type = 'R';
 
 
 
@@ -11,4 +11,4 @@ WHERE owner='NOBELBRTNEW_USER' and constraint_type = 'R';
 
 select *  from all_constraints
 where  constraint_type = 'R'
-AND CONSTRAint_NAME= 'FK_BIDE_BILLNO'
+AND CONSTRAint_NAME= 'FK_BILLNO'
