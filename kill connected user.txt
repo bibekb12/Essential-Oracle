@@ -4,7 +4,7 @@ CURRSESS varchar2(10);
 CURRSID varchar2(10);
 begin
 -- Enter Username here
-DBUSERNAME := 'KMCNEW_USER';
+DBUSERNAME := 'DB_USER';
 SELECT SID, SERIAL# into CURRSID, CURRSESS FROM V$SESSION WHERE AUDSID = Sys_Context('USERENV', 'SESSIONID');
 for rec in (select * from V$SESSION where USERNAME = DBUSERNAME)
 loop
